@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EnR2_uc9/1.0.0": {
+        "runtime": {
+          "EnR2_uc9.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EnR2_uc9/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
