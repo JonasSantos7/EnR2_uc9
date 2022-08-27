@@ -8,6 +8,7 @@ novaPf.nome = "Jonas";
 Console.WriteLine(novaPf.nome);
 Console.WriteLine("Nome: " + novaPf.nome);
 */
-novaPf.ValidarDataNascimento(new DateTime(1999,10,23));
+Console.WriteLine(novaPf.ValidarDataNascimento(new DateTime(1999,10,23)));
+
 
 
