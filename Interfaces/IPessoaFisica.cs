@@ -7,6 +7,6 @@ namespace EnR2_uc9.Interfaces
 {
     public interface IPessoaFisica
     {
-        bool ValidarDataNascimento(DateTime dataNasc);
+        bool ValidarDataNascimento(string dataNasc);
     }
 }
