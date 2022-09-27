@@ -43,7 +43,7 @@ switch (opcao)
         novaPf.nome = "Jonas";
         novaPf.dataNascimento = "23/10/1999";
         novaPf.cpf = "02363037677";
-        novaPf.rendimento = 600.0f;
+        novaPf.rendimento = 2600.0f;
         novoEnd.logradouro = "Sebastiao Moreira";
         novoEnd.numero = 217;
         novoEnd.complemento = "bloco 5";
@@ -52,7 +52,8 @@ switch (opcao)
         Console.WriteLine(@$"
         nome: {novaPf.nome}
         endereco: {novaPf.endereco.logradouro}, {novaPf.endereco.numero}, {novoEnd.complemento}
-        Maior de idade: {metodoPf.ValidarDataNascimento(novaPf.dataNascimento)}
+        Maior de idade: {(metodoPf.ValidarDataNascimento(novaPf.dataNascimento) ? "Sim" : "Não")}
+        Taxa de imposto a ser paga é: {metodoPf.PagarImposto(novaPf.rendimento).ToString("C")} 
         ");
         Console.WriteLine(@$"
         Aperta 'Enter' para continuar");          
@@ -76,7 +77,10 @@ switch (opcao)
           nome: {novaPj.nome}
           Razao Social: {novaPj.razaoSocial}
           CNPJ: {novaPj.cnpj}
-          CNPJ é valido: {metodoPj.ValidarCnpj(novaPj.cnpj)}");
+          CNPJ é valido: {(metodoPj.ValidarCnpj(novaPj.cnpj) ? "Sim" : "Não")}
+          Taxa de imposto a ser paga é: {metodoPj.PagarImposto(novaPj.rendimento).ToString("C")} 
+ ");
+    
           Console.WriteLine(@$"
           Aperta 'Enter' para continuar");          
           Console.ReadLine();
