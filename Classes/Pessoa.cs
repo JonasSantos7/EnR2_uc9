@@ -1,5 +1,4 @@
 using EnR2_uc9.Interfaces;
-using System.Text.RegularExpressions;
 
 namespace EnR2_uc9.Classes
 {
@@ -11,6 +10,22 @@ namespace EnR2_uc9.Classes
 
 
         public abstract float PagarImposto(float rendimento);
+
+        public void VerificarPastaArquivo(string caminho)
+        {
+
+            string pasta = caminho.Split("/")[0];
+
+            if(!Directory.Exists(pasta)){
+            Directory.CreateDirectory(pasta);
+            }
+         
+            if(!File.Exists(caminho))
+            {
+            using (File.Create(caminho)){}
+            }
+
+        }
         
        
 
